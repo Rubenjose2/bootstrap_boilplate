@@ -1,3 +1,17 @@
 /* .active{
     height: 100px;
 } */
+.header-container{
+    width: 100%;
+    padding: 15px;
+}
+.header-container__img{
+    width: 100%;
+}
+
+.header_menu{
+
+}
+.sticky-top{
+    background: white;
+}
