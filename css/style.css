@@ -1,17 +1,60 @@
 /* .active{
     height: 100px;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Special+Elite&display=swap');
+body{
+    background-color: #8080801f;
+    font-family: 'Roboto', sans-serif;
+}
 .header-container{
     width: 100%;
-    padding: 15px;
+    height: auto;
+    padding: 20px 20px 0px 20px;
+    z-index: -1;
+    position: relative;
 }
 .header-container__img{
-    width: 100%;
-}
-
-.header_menu{
-
+    max-width: 100%;
 }
 .sticky-top{
     background: white;
 }
+.blue-1 {
+    text-align: center;
+     color: #255aa8;
+     font-family: 'Special Elite', cursive;
+ }
+
+ .block-container{
+     width: 80%;
+     background-color: white;
+     padding: 20px;
+     margin-top: -40px;
+     border-radius: 8px;
+     border: 2px solid #e1e1e1;
+     z-index: 0;
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .accent-1{
+     text-align: center;
+     font-size: 20px;
+     font-weight: 800;
+ }
+
+ .accent-2{
+     font-style: italic;
+     font-size: 18px;
+ }
+
+ .round-picture-bw {
+     border-radius: 50%;
+     padding: 40px;
+ }
+ .img-bw {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+ }
