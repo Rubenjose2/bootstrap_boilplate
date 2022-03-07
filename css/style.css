@@ -96,11 +96,14 @@ body {
 
 .img-pastor-container {
     width: 100%;
+    position:absolute;
 }
 
 .img-pastors-block {
     opacity: 0.5;
-    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw
 }
 
 .box-slide--left {
@@ -115,6 +118,63 @@ body {
     animation: bottom-in 2000ms;
 }
 
+/* Container Packs */
+.container-pack{
+    width: auto;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+}
+.container-pack-block{
+    width: 200px;
+    background-color: #255aa8;
+    color: white;
+}
+
+.container-pack-block__box{
+    padding: 12px;
+
+}
+
+.container-pack-block__box__title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 65px;
+    text-align: center;
+
+}
+
+.amount-font{
+    font-family: 'Bebas Neue', cursive;
+}
+.amount{
+    font-size: 65px;
+    text-align: center;
+}
+
+.amount-cycle{
+    font-size: 32px;
+    text-align: center;
+}
+
+.amount-cycle_calculation{
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer-container{
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: #255aa8;
+    height: 100px;
+    color: #e1e1e1;
+}
+
+.footer-container__text{
+    padding: 20px;
+}
 @keyframes left-slide-in {
     from {
         transform: translateX(-100%);
@@ -151,5 +211,34 @@ body {
         transform: translateY(0%);
         opacity: 1;
     }
+}
+
+/* Media Query */
+
+@media screen and (max-width: 425px) {
+    .container-pack{
+        flex-direction: column;
+        width: auto;
+        height: unset;
+        justify-content: unset;
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 30px;
+    }
+    .container-pack-block{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: #255aa8;
+        color: white;
+    }
     
+}
+
+@media screen and (max-width: 768px) {
+
+    .number-accent {
+        font-size: 60px;
+        margin-bottom: -20px;
+    }
 }
