@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: img-static-cdo
+    build: .
+    container_name: static-cdo
+    restart: always
+    ports:
+      - "8080:80"
